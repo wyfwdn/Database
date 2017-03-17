@@ -1,0 +1,23 @@
+<html>
+  <style>
+    body{ 
+      font-size: 15pt;
+      font-family: arial;
+    }
+  </style>
+
+<body>
+  <h1>Coach</h1>
+
+  <div>
+    {% for n in data %}
+    <div>{{n}}</div>
+    {% endfor %}
+  </div>
+<form method="POST" action="/coachprofile">
+<p>Search for coach: <input type="text" name="cname"> <input type="submit" value="Search"></p>
+</form>
+  </body>
+
+
+</html>
